@@ -24,7 +24,7 @@ xhr.onload = function(){
                let html = `<div class="card">
                             <div class="card-header" id="heading${index}">
                                 <h2 class="mb-0">
-                                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                                    <button class="btn btn-link btn-block text-left" style="color:chocolate; font-size: 18px;font-family: cursive;" type="button" data-toggle="collapse"
                                         data-target="#collapse${index}" aria-expanded="true" aria-controls="collapse${index}">
                                         <b style="text-decoration:underline;color:grey"><em>Breaking News ${index+1}</em></b> : ${element['title']}
                                     </button>
@@ -34,7 +34,11 @@ xhr.onload = function(){
                             <div id="collapse${index}" class="collapse" aria-labelledby="heading${index}"
                                 data-parent="#newsAccordian">
                                 <div class="card-body">
-                                    ${element['description']}. <a href='${element['url']}' target="_blank">Read more here</a>
+                                    ${element['description']}. <a href='${element['url']}' target="_blank" style="
+                                    font-family: cursive;
+                                    font-size: 19px;
+                                    color: #c04bc7;
+                                ">Read more here</a>
                                 </div>
                             </div>
                         </div>`
